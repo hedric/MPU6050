@@ -14,3 +14,8 @@ Receive data from the MPU6050 over I2C. Some of the features of this chip is det
   * Auxilary master I2C bus for reading data from external sensors (e.g., magnetometer).
   * Digital-ouput temperature sensor.
   * 400 kHz fast mode I2c for communicating with all registers.
+
+
+## Important information
+  - The logic level for communications with the master is set by the voltage on VLOGIC.
+  - VLOGIC may be 1.8V ± 5% or VDD.
