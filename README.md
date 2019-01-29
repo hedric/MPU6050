@@ -7,8 +7,9 @@ https://store.invensense.com/datasheets/invensense/MPU-6050_DataSheet_V3%204.pdf
 ## Regiser map
 https://www.invensense.com/wp-content/uploads/2015/02/MPU-6000-Register-Map1.pdf
 
-## Sketch base code
-https://playground.arduino.cc/Main/MPU-6050#sketch
+## Resources
+ - https://electronics.stackexchange.com/questions/172266/getting-gyro-values-from-mpu-6050
+ - https://playground.arduino.cc/Main/MPU-6050#sketch
 
 ## Gyroscope
  * Digital-output X-, Y-, and Z-Axis angular rate sensors (gyroscopes) with a user-programmable full-scale range of ±250, ±500, ±1000 and ±2000 degrees/sec.
