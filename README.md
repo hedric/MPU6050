@@ -15,9 +15,9 @@ Receive data from the MPU6050 over I2C. Some of the features of this chip is det
   * Digital-ouput temperature sensor.
   * 400 kHz fast mode I2c for communicating with all registers.
 
-
 ## Important information
   - VDD = 3.3V
+  - Slave adress of MPU6050 is b110100X which is 7 bits. The X bit can be either 1 or 0 depending on if there are two MPU6050 on the I2C bus.
   - The logic level for communications with the master is set by the voltage on VLOGIC.
   - VLOGIC may be 1.8V ± 5% or VDD.
   - The MPU6050 acts as a master to any external sensors connected to the auxilary I2C bus.
@@ -28,8 +28,25 @@ Receive data from the MPU6050 over I2C. Some of the features of this chip is det
  ## Programmable interrupts
   - The MPU6050 has a programmable interrupt system which can generate an interrupt signal on the INT pin. Status flags indicate the source of an interrupt. Interrupt sources may be enable or disabled individually.
   ### Interrupt sources
-  - FIFO Overflow (FIFO module)
-  - Data Ready (Sensor registers)
-  - I2C master errors 
-  - I2C slave 4
-
+  - FIFO Overflow (FIFO module).
+  - Data Ready (Sensor registers).
+  - I2C master errors.
+  - I2C slave 4.
+ 
+ ## I2C communications protocol
+  - Start condition: While SCL high, SDA high -> low.
+  - Stop condition: While SCL high, SDA low -> high.
+  - I2C data bytes are 8-bits long.
+  - Acknowledge: SDA low while SCL high at 9th clock cycle.
+  - Not Acknowledge: SDA high while SCL high at 9th clock cycle.
+  
+  ### Reading the internal MPU6050 registers
+   - S = Start condition
+   - AD = Slave I2C adress
+   - W = Write bit (0)
+   - R = Read bit (1)
+   - ACK = Acknowledge
+   - NACK = Not-Acknowledge
+   #### Single-Byte Read Sequence
+   Master: S | AD+W | --- | RA | --- | S |
+   Slave : - | ---- | ACK | -- | ACK | - |
