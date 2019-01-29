@@ -1,5 +1,6 @@
 # MPU6050
 Receive data from the MPU6050 over I2C. Some of the features of this chip is detailed below. As a reference: https://store.invensense.com/datasheets/invensense/MPU-6050_DataSheet_V3%204.pdf
+https://www.invensense.com/wp-content/uploads/2015/02/MPU-6000-Register-Map1.pdf
 
 ## Gyroscope
  * Digital-output X-, Y-, and Z-Axis angular rate sensors (gyroscopes) with a user-programmable full-scale range of ±250, ±500, ±1000 and ±2000 degrees/sec.
@@ -47,6 +48,4 @@ Receive data from the MPU6050 over I2C. Some of the features of this chip is det
    - R = Read bit (1)
    - ACK = Acknowledge
    - NACK = Not-Acknowledge
-   #### Single-Byte Read Sequence
-   - Master: S | AD+W | --- | RA | --- | S |
-   - Slave : - | ---- | ACK | -- | ACK | - |
+
