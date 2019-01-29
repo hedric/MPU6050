@@ -1,5 +1,8 @@
 # MPU6050
-Receive data from the MPU6050 over I2C. Some of the features of this chip is detailed below. As a reference: https://store.invensense.com/datasheets/invensense/MPU-6050_DataSheet_V3%204.pdf
+Receive data from the MPU6050 over I2C. Some of the features of this chip is detailed below. 
+# Data sheet
+https://store.invensense.com/datasheets/invensense/MPU-6050_DataSheet_V3%204.pdf
+# Regiser map
 https://www.invensense.com/wp-content/uploads/2015/02/MPU-6000-Register-Map1.pdf
 
 ## Gyroscope
