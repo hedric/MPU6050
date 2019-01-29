@@ -7,6 +7,9 @@ https://store.invensense.com/datasheets/invensense/MPU-6050_DataSheet_V3%204.pdf
 ## Regiser map
 https://www.invensense.com/wp-content/uploads/2015/02/MPU-6000-Register-Map1.pdf
 
+## Sketch base code
+https://playground.arduino.cc/Main/MPU-6050#sketch
+
 ## Gyroscope
  * Digital-output X-, Y-, and Z-Axis angular rate sensors (gyroscopes) with a user-programmable full-scale range of ±250, ±500, ±1000 and ±2000 degrees/sec.
 
@@ -24,6 +27,8 @@ https://www.invensense.com/wp-content/uploads/2015/02/MPU-6000-Register-Map1.pdf
 ## Important information
   - VDD = 3.3V
   - Slave adress of MPU6050 is b110100X which is 7 bits. The X bit can be either 1 or 0 depending on if there are two MPU6050 on the I2C bus.
+  - b1101001 = 0x69 -> AD0 pin to VLOGIC (+3.3V)
+  - b1101000 = 0x68 -> AD0 pin to GND
   - The logic level for communications with the master is set by the voltage on VLOGIC.
   - VLOGIC may be 1.8V ± 5% or VDD.
   - The MPU6050 acts as a master to any external sensors connected to the auxilary I2C bus.
