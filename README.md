@@ -16,7 +16,8 @@ Receive data from the MPU6050 over I2C. Some of the features of this chip is det
   * 400 kHz fast mode I2c for communicating with all registers.
 
 
-## Relevant information
+## Important information
+  - VDD = 3.3V
   - The logic level for communications with the master is set by the voltage on VLOGIC.
   - VLOGIC may be 1.8V ± 5% or VDD.
   - The MPU6050 acts as a master to any external sensors connected to the auxilary I2C bus.
