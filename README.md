@@ -48,5 +48,5 @@ Receive data from the MPU6050 over I2C. Some of the features of this chip is det
    - ACK = Acknowledge
    - NACK = Not-Acknowledge
    #### Single-Byte Read Sequence
-   Master: S | AD+W | --- | RA | --- | S |
-   Slave : - | ---- | ACK | -- | ACK | - |
+   - Master: S | AD+W | --- | RA | --- | S |
+   - Slave : - | ---- | ACK | -- | ACK | - |
