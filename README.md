@@ -1,8 +1,8 @@
 # MPU6050
 Basic project to receive data from the MPU-6050 over I2C. . This will be implemented on two different development boards.
 
-Tiva C Launchpad with a TM4C123G microcontroller, 32-bit ARM Cortex M4 CPU.
-Nucleo 144 F767ZI with a STM32F7 microcontroller, 32-bit ARM Cortex M7 CPU.
+- Tiva C Launchpad with a TM4C123G microcontroller, 32-bit ARM Cortex M4 CPU.
+- Nucleo 144 F767ZI with a STM32F7 microcontroller, 32-bit ARM Cortex M7 CPU.
 
 Some of the features of the MPU-6050 is detailed below.
 
