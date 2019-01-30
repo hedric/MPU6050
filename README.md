@@ -1,4 +1,4 @@
-# MPU6050
+# MPU6050 Project
 Basic project to receive data from the MPU-6050 over I2C. . This will be implemented on two different development boards.
 
 - Tiva C Launchpad with a TM4C123G microcontroller, 32-bit ARM Cortex M4 CPU.
@@ -6,10 +6,10 @@ Basic project to receive data from the MPU-6050 over I2C. . This will be impleme
 
 Some of the features of the MPU-6050 is detailed below.
 
-## Data sheet
+## MPU-6050 Data sheet
 https://store.invensense.com/datasheets/invensense/MPU-6050_DataSheet_V3%204.pdf
 
-## Regiser map
+## MPU-6050 Regiser map
 https://www.invensense.com/wp-content/uploads/2015/02/MPU-6000-Register-Map1.pdf
 
 ## Resources
